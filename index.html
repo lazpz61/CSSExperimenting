@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20% 20%;
+            grid-template-rows: 20% 20% 20% 20% 20%;
+        }
+
+        .child1 {
+            height: 100%;
+            width: 100%;
+            background-color: blue;
+            grid-area: 1 / 1 / 2 / 2;
+            z-index: 1;
+        }
+
+        .child2 {
+            height: 100%;
+            width: 100%;
+            background-color:green;
+            grid-area: 1 / 1 / 2 / 2;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="child1"></div>
+        <div class="child2"></div>
+    </div>
+    
+</body>
+</html>
